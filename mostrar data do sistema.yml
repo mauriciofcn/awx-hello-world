@@ -1,0 +1,12 @@
+---
+- name: Data Atual
+  hosts: localhost
+
+  tasks:
+    - name: Executar date
+      command: date
+      register: resultado
+
+    - name: Mostrar resultado
+      debug:
+        var: resultado.stdout
