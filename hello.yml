@@ -1,0 +1,9 @@
+---
+- name: Hello World
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Exibir mensagem
+      debug:
+        msg: "Hello World do AWX!"
